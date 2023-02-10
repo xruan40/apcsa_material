@@ -5,13 +5,21 @@ public class StudyAtHome
    public static void main(String[] args)
    {
        // Rewrite this code to use an ArrayList instead of an array
-       String[] toDoList = new String[3];
-       toDoList[0] = "Review the lessons";
+       //String[] toDoList = new String[3];
+       ArrayList<String> toDoList =new ArrayList<String>();
+      
+       toDoList.add("Review the lessons");
+       toDoList.add("Drink water");
+       toDoList.add("Work on the lab");
+      
+       /*toDoList[0] = "Review the lessons";
        toDoList[1] = "Drink water";
        toDoList[2] = "Work on the lab";
+       */
 
        // changing element 1
-       toDoList[1] = "Do the homeworks";
+       //toDoList[1] = "Do the homeworks";
+       toDoList.set(1, "Do the homeworks");
 
        System.out.println(toDoList.length + " things to do!");
        System.out.println("Here's the first thing to do: "
